@@ -10,4 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add event listener to play audio on any click
     document.addEventListener('click', playAudio);
+
+    // Try to play the audio automatically
+    playAudio();
 });
+
