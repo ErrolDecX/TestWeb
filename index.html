@@ -7,19 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background">
-        <img src="background.gif" alt="Background GIF" class="background-gif">
+    <div id="intro-screen" class="intro-screen">
+        <h1>Click here to start the experience</h1>
     </div>
-    <div class="info-box">
-        <h1>One FF</h1>
-        <p>Username: SuperOneFF</p>
-        <p>Email: rahulofficialxd@gmail.com</p>
-        <p>Phone: 123-456-7890</p>
-    </div>
+    <div id="main-content" class="hidden">
+        <div class="background">
+            <img src="background.gif" alt="Background GIF" class="background-gif">
+        </div>
+        <div class="info-box">
+            <h1>One FF</h1>
+            <p>Username: SuperOneFF</p>
+            <p>Email: rahulofficialxd@gmail.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
 
-    <audio id="background-music" controls autoplay loop>
-        <source src="background.mp3" type="audio/mp3">
-    </audio>
+        <audio id="background-music" controls loop>
+            <source src="background.mp3" type="audio/mp3">
+        </audio>
+    </div>
 
     <script src="script.js"></script>
 </body>
