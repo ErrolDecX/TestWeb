@@ -1,17 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
+    var introScreen = document.getElementById('intro-screen');
+    var mainContent = document.getElementById('main-content');
     var audio = document.getElementById('background-music');
 
-    function playAudio() {
+    function startExperience() {
+        introScreen.classList.add('hidden');
+        mainContent.classList.remove('hidden');
         audio.play().catch(function(err) {
             console.log('Failed to play audio:', err);
         });
-        document.removeEventListener('click', playAudio);
     }
 
-    // Add event listener to play audio on any click
-    document.addEventListener('click', playAudio);
-
-    // Try to play the audio automatically
-    playAudio();
+    // Start the experience on click
+    introScreen.addEventListener('click', startExperience);
 });
-
